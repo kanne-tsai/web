@@ -1,36 +1,23 @@
 /*.text-pri {color: rgba(4, 79, 16, 0.971)}*/
 /*.text-sec {color:#4488dd} */
 
-/* GOOGLEFONTS雲端字體 */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap');
-
 :root,
 [data-bs-theme=light] {
     --bs-dark-rgb: 151,124,0;
+    --bs-emphasis-color: #221144;
 }
-
-/* 套用GOOGLE雲端字體 */
-body {
-    font-family: "微軟正黑體", "Noto Sans TC", sans-serif;
-  }
-
 
 /* 選取器是標籤, 影響整體 */
 h2 {font-size: 2rem;font-weight: 900;color: rgb(39, 102, 229);}
 
-/* 自訂邊框模式 */
-.card-custom {
-    border-style: solid;
-    border-width: 5px;
-    border-radius: 5px;
-    border-color: rgb(228, 29, 29);
-}
-
-.h2-custom-pink {font-size: 3rem;font-weight: 900;color: rgb(255, 0, 195);}
 /* 選取器是類別, 影響個別, 手動套用 */
+.h2-custom-pink {font-size: 3rem;font-weight: 900;color: rgb(255, 0, 195);}
+
 footer a {
     text-decoration: none;
 }
+
+/* 置底 */
 .footer-custom {
     position: fixed;
     left: 0;
@@ -39,6 +26,52 @@ footer a {
     background-color: red;
     color: white;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
+  /* 標題icon */
+  .iconsTitle{
+    font-size: 2.5rem !important;
+    color: rgb(39, 102, 229);
+    vertical-align: bottom;
+  }
+
+  /* 編號清單   */
+  .list-no {
+    list-style-type: katakana;
+  }
+
+  /* 項目清單 */
+  .list-item {
+    style="list-style-type:square
+  }
+  /* 無邊框card */
+  .card-no-border {
+    border: none;
+  }
+
+  /* 無障礙文字對比 */
+  .footer-access {background-color: #111122; color: #DDEE11; }
+  /* footer {background-color: #111122; color: #DDEE11; } */
+
+  /* 選取氣勢標籤, 影響全體 */
+  h5 {font-weight: 900;}
+  
+  /* modal寬度 */
+  .modal {
+    --bs-modal-width: 750px;
+  }
+
+  .accordion-button {
+    font-size: 2rem;
+    color: var(--bs-accordion-btn-color);
+    text-align: left;
+    background-color: var(--bs-accordion-btn-bg);
+    border: 0;
+    border-radius: 0;
+    overflow-anchor: none;
+    transition: var(--bs-accordion-transition);
+  }
+  
+  
+  
